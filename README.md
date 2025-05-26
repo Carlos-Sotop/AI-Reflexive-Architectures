@@ -1,3 +1,4 @@
+
 # Reflexive AI: A Framework for Layered Intelligence
 
 This framework explores how to build AI systems that improve themselves through layered memory, reflection, and selective forgetting. Inspired by cognitive neuroscience and informed by practical constraints, it defines a structure where agents evaluate not just actions — but the quality of their own introspection.
@@ -231,5 +232,7 @@ Each layer prunes memory based on relevance, impact, and recency. Forgetting is 
 
 This structure makes it possible for AI systems not just to reason, but to evaluate their own reasoning process, and update the tools with which they reflect. Every layer is editable. Every insight is testable based on user interactions.
 
-In this framework, reflexivity isn’t recursion, it’s distributed governance. Intelligence emerges not from depth alone, but from how governance and responsibility is layered across different agents.
+In this framework, reflexivity isn’t recursion, it’s distributed governance. 
+
+Intelligence emerges not from depth alone, but from how governance and responsibility is layered across different agents.
 
