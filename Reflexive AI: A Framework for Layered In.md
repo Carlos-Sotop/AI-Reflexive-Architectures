@@ -194,9 +194,9 @@ Each layer prunes memory based on relevance, impact, and recency. Forgetting is 
 
 ---
 
-Closing Note
+## Closing Note
 
-This structure makes it possible for AI systems not just to reason, but to evaluate their own reasoning process, and update the tools with which they reflect. Every layer is editable. Every insight is testable based on user interactions.
+This structure enables AI systems not just to reason, but to evaluate their own reasoning process — and update the very tools they use to reflect. Every layer is editable. Every insight is testable based on outcomes and feedback.
 
-In this framework, reflexivity isn’t recursion, it’s distributed governance. Intelligence emerges not from depth alone, but from how governance and responsibility is layered across different agents.
+In this framework, reflexivity isn’t recursion — it’s distributed governance. Intelligence emerges not from depth alone, but from how governance and responsibility are layered across agents.
 
