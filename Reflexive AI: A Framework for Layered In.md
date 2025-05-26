@@ -34,6 +34,34 @@ The system is structured in layers, each with a distinct cognitive role:
 
 Shared Memory Layer (long-term)
 
+<details> <summary>View System Diagram</summary>
+text
+Copy
+Edit
+System Hierarchy
+
+Level 2: Meta-Watcher
+  ↳ Reflects on the Watcher
+  ↳ Edits Level 1 prompts, A/B strategies
+
+        ↓
+
+Level 1: Reflexive Watcher
+  ↳ Evaluates Level 0 agents
+  ↳ Edits prompts, tunes temperature, A/B tests
+
+        ↓
+
+Level 0: Execution Agents
+  ┌──────────────┬─────────────┬─────────────┐
+  │ Orchestrator │ Strategist  │  Tactician  │
+  └──────────────┴─────────────┴─────────────┘
+
+        ↓
+
+Shared Memory Layer (long-term)
+</details>
+
 ---
 
 ## Layer Descriptions
