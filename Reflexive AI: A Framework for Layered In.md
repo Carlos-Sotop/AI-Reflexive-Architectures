@@ -6,66 +6,53 @@ This framework explores how to build AI systems that improve themselves through 
 
 ## Architecture Overview
 
-The system is structured in layers, each with a distinct cognitive role:
-
-**<Level 2: Meta-Watcher>**
-
- (Reflects on how reflection is done;
- edits/refines Level 1's prompts/logic)
-           
-↓
-
-**<Level 1: Reflexive Watcher>**
-
-(Evaluates agents; edits their prompts,
- tunes temperature, and A/B tests them)
-     
-↓
-    
-**<Level 0: Orchestration & Execution Agents>**
-
-│ Orchestrator │ 
-
-↓
-
-│Strategist │ Tactician │
-
----
-
-## Architecture Overview
-
 The system is structured in layers, each with a distinct cognitive role and memory type.
 
-                         ┌────────────────────────────┐
-                         │      Shared Memory Layer    │
-                         │         (long-term)         │
-                         └────────────┬───────────────┘
-                                      │
-        ┌────────────────────────────┐│
-        │      Level 2:             │ │
-        │      Meta-Watcher         │◄┘
-        └────────────┬──────────────┘
-                     ↓
-        (Reflects on how reflection is done;  
-         edits/refines Level 1's prompts/logic)
-
-        ┌────────────────────────────┐
-        │      Level 1:             │
-        │   Reflexive Watcher       │◄──┐
+                                                    ┌─────────────────────────────┐
+                                                    │      Shared Memory Layer    │
+                                                    │         (long-term)         │
+                                                    │                             │
+                                                    │    • Strategic Knowledge    │
+                                                    │    • Global Context         │
+                                                    │    • Prompt/Test History    │
+                                                    │    • Reflection Logs        │
+                                                    └─────────────────────────────┘
+        ┌────────────────────────────┐                    │
+        │      Level 2:              │                    │
+        │      Meta-Watcher          │◄───────────────────┘
+        │                            │                    │
+        │ (Reflects on reflection)   │                    │
+        │ • Heuristic Memory         │                    │
+        └────────────┬───────────────┘                    │
+                     ↓                                    │
+        (Reflects on how reflection is done;              │
+         edits/refines Level 1's prompts/logic)           │
+                                                          │
+        ┌───────────────────────────┐                     │
+        │      Level 1:             │◄────────────────────┘                   
+        │   Reflexive Watcher       │───┐
+        │                           │   │
+        │ (Monitors + tunes agents) │   │
+        │ • Reflection Logs         │   │
         └────────────┬──────────────┘   │
                      ↓                  │
         (Evaluates agents; edits        │
          prompts, tunes temp, A/B)      │
-
-        ┌────────────────────────────┐  │
-        │      Level 0:             │   │
-        │     Orchestrator          │◄──┘
-        └────────────┬──────────────┘
-                     ↓
-        ┌────────────┴────────────┐       ┌────────────┴────────────┐
-        │      Strategist         │       │      Tactician          │
-        │                         │
-        └─────────────────────────┘
+                                        ↓
+                        ┌───────────────────────────┐  
+                        │           Level 0:        │   
+                    ┌── │        Orchestrator       │──┐
+                    │   │                           │  │
+                    │   │  (Interprets & Delegates) │  │
+                    │   │  • Working Mem            │  │
+                    ↓   └───────────────────────────┘  ↓
+            ┌────────────────────┐   ┌────────────────────────┐
+            │     Strategist     │   │       Tactician        │
+            │                    │   │                        │
+            │ (Plans & reasons)  │   │ (Executes instructions)│
+            │ • Declarative Mem  │   │ • Procedural Mem       │
+            └────────────────────┘   └────────────────────────┘
+            
 
 
 
