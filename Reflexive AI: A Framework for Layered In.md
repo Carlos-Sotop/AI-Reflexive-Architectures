@@ -139,13 +139,15 @@ const res = await openai.chat.completions.create({
 });
 
 ```
-Memory Stack
+Each layer requires scoped memory access:
+
 Memory Type	Used By	Purpose
-Working Memory	All agents	Short-term context
-Declarative	Strategist	Strategic planning, campaign data
-Procedural	Tactician	Routine task execution
-Reflection Logs	Watcher	Agent output histories
-Heuristic Memory	Meta-Watcher	Reflection patterns, tuning strategies
+|--------------|-----------------------------------------------------------|-----------------------------|
+Working Memory	All agents	Contextual short-term inputs
+Declarative	Strategist	Strategic long-term planning context
+Procedural	Tactician	Fast, repeatable execution traces
+Reflection Logs	Watcher	Tracks agent contradictions and results
+Heuristic Memory	Meta-Watcher	Evaluation questions, interval tuning
 
 When to Reflect
 Trigger Type	Layer	Example
