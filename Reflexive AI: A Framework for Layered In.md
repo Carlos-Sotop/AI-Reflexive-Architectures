@@ -26,7 +26,7 @@ The system is structured in layers, each with a distinct cognitive role:
 
 │ Orchestrator │ Strategist │ Tactician │
 
-| Orchastrator                                                  |
+| Orchastrator |                                                 |
 |--------------|------------------------------------------------|
 | Strategist | Tactician |
 
