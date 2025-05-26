@@ -18,10 +18,10 @@ The system is structured in layers, each with a distinct cognitive role and memo
                                                     │    • Reflection Logs        │
                                                     └─────────────────────────────┘
         ┌────────────────────────────┐                    │
-        │      Level 2:              │                    │
-        │      Meta-Watcher          │◄───────────────────┘
+        │           Level 2:         │                    │
+        │         Meta-Watcher       │◄───────────────────┘
         │                            │                    │
-        │ (Reflects on reflection)   │                    │
+        │  (Reflects on reflection)  │                    │
         │ • Heuristic Memory         │                    │
         └────────────┬───────────────┘                    │
                      ↓                                    │
@@ -29,8 +29,8 @@ The system is structured in layers, each with a distinct cognitive role and memo
          edits/refines Level 1's prompts/logic)           │
                                                           │
         ┌───────────────────────────┐                     │
-        │      Level 1:             │◄────────────────────┘                   
-        │   Reflexive Watcher       │───┐
+        │           Level 1:        │◄────────────────────┘                   
+        │      Reflexive Watcher    │───┐
         │                           │   │
         │ (Monitors + tunes agents) │   │
         │ • Reflection Logs         │   │
@@ -40,10 +40,10 @@ The system is structured in layers, each with a distinct cognitive role and memo
          prompts, tunes temp, A/B)      │
                                         ↓
                         ┌───────────────────────────┐  
-                        │           Level 0:        │   
+                        │          Level 0:         │   
                     ┌── │        Orchestrator       │──┐
                     │   │                           │  │
-                    │   │  (Interprets & Delegates) │  │
+                    │   │  (Interprets & delegates) │  │
                     │   │  • Working Mem            │  │
                     ↓   └───────────────────────────┘  ↓
             ┌────────────────────┐   ┌────────────────────────┐
