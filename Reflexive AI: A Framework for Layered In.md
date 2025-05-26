@@ -34,29 +34,44 @@ The system is structured in layers, each with a distinct cognitive role:
 
 ## Architecture Diagram
 
-┌────────────────────────────┐     ┌────────────────────────────┐
-│      Meta-Watcher          │◄──▶│                            │
-│  (Reflects on reflection)  │     │   Shared Memory Layer      │
-│  • Heuristic Memory        │     │   • Strategic Knowledge     │
-└────────────┬───────────────┘     │   • Global Context          │
-             ↓                     │   • Prompt/Test History     │
-┌────────────────────────────┐     │   • Reflection Logs         │
-│   Reflexive Watcher        │◄──▶│                            │
-│ (Monitors + tunes agents)  │     └────────────────────────────┘
-│ • Reflection Logs          │
-└────────────┬───────────────┘
-             ↓
-┌────────────────────────────┐
-│       Orchestrator         │◄────────────┐
-│ (Delegates, sequences)     │             │
-│ • Working Memory           │             │
-└────────────┬───────────────┘             │
-             ↓                             │
-    ┌────────────────────┐   ┌────────────────────────┐
-    │     Strategist      │   │       Tactician        │
-    │ (Plans & reasons)   │   │ (Executes instructions)│
-    │ • Declarative Mem   │   │ • Procedural Mem       │
-    └────────────────────┘   └────────────────────────┘
+## Architecture Overview
+
+The system is structured in layers, each with a distinct cognitive role and memory type.
+## Architecture Overview
+
+The system is structured in layers, each with a distinct cognitive role:
+
+                         ┌────────────────────────────┐
+                         │      Shared Memory Layer    │
+                         │         (long-term)         │
+                         └────────────┬───────────────┘
+                                      │
+        ┌────────────────────────────┐│
+        │      Level 2:             │ │
+        │      Meta-Watcher         │◄┘
+        └────────────┬──────────────┘
+                     ↓
+        (Reflects on how reflection is done;  
+         edits/refines Level 1's prompts/logic)
+
+        ┌────────────────────────────┐
+        │      Level 1:             │
+        │   Reflexive Watcher       │◄──┐
+        └────────────┬──────────────┘   │
+                     ↓                  │
+        (Evaluates agents; edits        │
+         prompts, tunes temp, A/B)      │
+
+        ┌────────────────────────────┐  │
+        │      Level 0:             │   │
+        │     Orchestrator          │◄──┘
+        └────────────┬──────────────┘
+                     ↓
+        ┌────────────┴────────────┐
+        │      Strategist         │
+        │  (optionally Tactician) │
+        └─────────────────────────┘
+
 
 
 ## Layer Descriptions
