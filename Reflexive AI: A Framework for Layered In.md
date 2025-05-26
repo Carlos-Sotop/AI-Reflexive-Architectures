@@ -24,9 +24,7 @@ The system is structured in layers, each with a distinct cognitive role:
     
 **Level 0: Execution Agents**
 
-┌──────────────┬──────────────┬──────────────┐
 │ Orchestrator │ Strategist │ Tactician │
-└──────────────┴──────────────┴──────────────┘
 
 ↓
 
