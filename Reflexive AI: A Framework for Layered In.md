@@ -8,9 +8,6 @@ This framework explores how to build AI systems that improve themselves through 
 
 The system is structured in layers, each with a distinct cognitive role:
 
-pgsql
-Copy
-Edit
      Level 2: Meta-Watcher
  (Reflects on how reflection is done)
               ↓
@@ -23,10 +20,6 @@ Edit
 └────────────┴────────────┴────────────┘
 ↓
 Shared Memory Layer (long-term)
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -75,9 +68,6 @@ Suggests better evaluation intervals and questions.
 
 Performs long-term pruning of outdated heuristics.
 
-ts
-Copy
-Edit
 // Meta-watcher long-term pruning
 function pruneReflectionHeuristics(history) {
   return history.filter(h =>
@@ -97,9 +87,7 @@ Watcher	0.3	Consistent reflection
 Meta-Watcher	0.5	Balanced metacognitive review
 
 Example Agent Call
-ts
-Copy
-Edit
+
 const settings = {
   tactician: { temp: 0.2, prompt: "You strictly execute structured actions." },
   strategist: { temp: 0.7, prompt: "You generate high-level strategic insights..." },
@@ -152,10 +140,6 @@ Metacognition (PFC / DMN) → Watchers
 Closing Note
 This structure creates systems that think, watch themselves think, and occasionally question how they're thinking. Reflexivity becomes a scaffold — not just for intelligence, but for internal coherence and growth over time.
 
-markdown
-Copy
-Edit
-
 Let me know if you also want:
 
 - A matching `LICENSE` file  
@@ -192,9 +176,6 @@ Tracks downstream impact of changes and rolls back if necessary.
 
 Also manages short-term forgetting:
 
-ts
-Copy
-Edit
 // Short-term forgetting example
 function forgetRecentNoise(memoryLog) {
   return memoryLog.filter(entry =>
@@ -203,9 +184,7 @@ function forgetRecentNoise(memoryLog) {
     !entry.redundant
   );
 }
-ts
-Copy
-Edit
+
 // Dynamic prompt A/B test for agent
 function testAgentPrompts(agentId, promptVariants) {
   return promptVariants.map((prompt, i) => ({
@@ -226,9 +205,6 @@ A/B tests different reflection heuristics over time (e.g. more frequent vs. deep
 
 Prunes outdated meta-rules or ineffective reflection behaviors.
 
-ts
-Copy
-Edit
 // Meta-watcher testing reflection strategies
 const reflectionVariants = [
   { id: 'interval-3d', config: { intervalDays: 3, questionDepth: 1 } },
@@ -252,9 +228,6 @@ lets do the whole md file gain pls, including my recent ask
 ChatGPT said:
 Absolutely — here’s the full, up-to-date README.md file with all previous logic and your recent addition about prompt editing and A/B testing by both the Watcher and Meta-Watcher layers.
 
-md
-Copy
-Edit
 # Reflexive AI: A Framework for Layered Intelligence
 
 This framework explores how to build AI systems that improve themselves through layered memory, reflection, and selective forgetting. Inspired by cognitive neuroscience and informed by practical constraints, it defines a structure where agents evaluate not just actions — but the quality of their own introspection.
@@ -265,9 +238,6 @@ This framework explores how to build AI systems that improve themselves through 
 
 The system is structured in layers, each with a distinct cognitive role:
 
-mathematica
-Copy
-Edit
      Level 2: Meta-Watcher
  (Reflects on how reflection is done;
  edits/refines Level 1's prompts/logic)
@@ -282,10 +252,6 @@ Edit
 └────────────┴────────────┴────────────┘
 ↓
 Shared Memory Layer (long-term)
-
-yaml
-Copy
-Edit
 
 ---
 
@@ -324,9 +290,7 @@ function forgetRecentNoise(memoryLog) {
     !entry.redundant
   );
 }
-ts
-Copy
-Edit
+
 // A/B testing agent prompts
 function testAgentPrompts(agentId, promptVariants) {
   return promptVariants.map((prompt, i) => ({
@@ -349,9 +313,6 @@ Handles strategic forgetting of outdated self-evaluation techniques.
 
 Runs on long intervals (e.g. milestone-based or weekly):
 
-ts
-Copy
-Edit
 // Meta-watcher A/B testing reflection logic
 const reflectionVariants = [
   { id: 'interval-3d', config: { intervalDays: 3, questionDepth: 1 } },
@@ -373,9 +334,7 @@ Watcher	0.3	Low-variance analysis
 Meta-Watcher	0.5	Balanced system improvement
 
 Example Agent Call
-ts
-Copy
-Edit
+
 const settings = {
   tactician: { temp: 0.2, prompt: "You strictly execute structured actions." },
   strategist: { temp: 0.7, prompt: "You generate high-level strategic insights..." },
