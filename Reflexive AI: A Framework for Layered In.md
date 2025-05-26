@@ -106,6 +106,8 @@ function pruneReflectionHeuristics(history) {
 
 ```
 
+---
+
 ## Agent Temperature Strategy
 
 | Layer        | Temperature                                               | Purpose                     | 
