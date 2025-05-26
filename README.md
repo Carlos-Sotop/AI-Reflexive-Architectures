@@ -1,7 +1,7 @@
 
 # Reflexive AI: A Framework for Layered Intelligence
 
-This framework explores how to build AI systems that improve themselves through layered memory, reflection, and selective forgetting. Inspired by cognitive neuroscience and informed by practical constraints, it defines a structure where agents evaluate not just actions — but the quality of their own introspection.
+This framework explores how to build AI systems that improve themselves through layered memory, reflection, and selective forgetting. Inspired by cognitive neuroscience and informed by practical constraints, it defines a structure where agents evaluate not just actions, but the quality of their own introspection.
 
 ---
 
@@ -215,7 +215,7 @@ Each layer reflects on the one below it, with bounded authority. Reflection is s
 Avoid infinite regress by triggering reflection at meaningful intervals or events, not continuously.
 
 ### Prompt Adaptation  
-Prompts, temperature, and system behavior are dynamic — modified based on reflection outcomes and empirical feedback.
+Prompts, temperature, and system behavior are dynamic, modified based on reflection outcomes and empirical feedback.
 
 ### Selective Forgetting  
 Each layer prunes memory based on relevance, impact, and recency. Forgetting is as important as remembering.
