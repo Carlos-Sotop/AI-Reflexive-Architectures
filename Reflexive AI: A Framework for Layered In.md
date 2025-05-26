@@ -22,25 +22,13 @@ The system is structured in layers, each with a distinct cognitive role:
      
 ↓
     
-**<Level 0: Execution Agents>**
+**<Level 0: Orchestration & Execution Agents>**
 
-                            ┌───────────────────┐
-     Level 0                       │   Orchestrator    │
-                            └────────┬──────────┘
-                                    ↓
-                        ┌─────────────────────┐
-                        │ Strategist          │
-                        │ Tactician (optional)│
-                        └─────────────────────┘
-
-
-| Orchastrator |                                                 |
-|--------------|------------------------------------------------|
-| Strategist | Tactician |
+│ Orchestrator │ 
 
 ↓
 
-Shared Memory Layer (long-term)
+│Strategist │ Tactician │
 
 ---
 
