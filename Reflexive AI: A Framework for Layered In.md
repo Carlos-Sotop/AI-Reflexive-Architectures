@@ -34,38 +34,34 @@ The system is structured in layers, each with a distinct cognitive role:
 
 ## Architecture Overview
 
-The system is structured in layers, each with a distinct cognitive role and memory type.
+The system is structured in layers, each with a distinct cognitive role and memory type:
 
-                         ┌────────────────────────────┐
-                         │      Shared Memory Layer    │
-                         │         (long-term)         │
-                         └────────────┬───────────────┘
-                                      │
-        ┌────────────────────────────┐│
-        │      Level 2:             │ │
-        │      Meta-Watcher         │◄┘
-        └────────────┬──────────────┘
-                     ↓
-        (Reflects on how reflection is done;  
-         edits/refines Level 1's prompts/logic)
+┌────────────────────────────┐ ┌────────────────────────────┐
+│ Meta-Watcher │◄──▶│ Shared Memory Layer │
+│ (Reflects on reflection) │ │ • Strategic Knowledge │
+│ • Heuristic Memory │ │ • Global Context │
+└────────────┬───────────────┘ │ • Prompt/Test History │
+↓ │ • Reflection Logs │
+┌────────────────────────────┐ └────────────────────────────┘
+│ Reflexive Watcher │◄──▶ Shared by all layers
+│ (Monitors + tunes agents) │
+│ • Reflection Logs │
+└────────────┬───────────────┘
+↓
+┌────────────────────────────┐
+│ Orchestrator │◄────────────┐
+│ (Delegates, sequences) │ │
+│ • Working Memory │ │
+└────────────┬───────────────┘ │
+↓ ↓
+┌────────────────────┐ ┌────────────────────────┐
+│ Strategist │ │ Tactician │
+│ (Plans & reasons) │ │ (Executes tasks) │
+│ • Declarative Mem │ │ • Procedural Mem │
+└────────────────────┘ └────────────────────────┘
 
-        ┌────────────────────────────┐
-        │      Level 1:             │
-        │   Reflexive Watcher       │◄──┐
-        └────────────┬──────────────┘   │
-                     ↓                  │
-        (Evaluates agents; edits        │
-         prompts, tunes temp, A/B)      │
+ 
 
-        ┌────────────────────────────┐  │
-        │      Level 0:             │   │
-        │     Orchestrator          │◄──┘
-        └────────────┬──────────────┘
-                     ↓
-        ┌────────────┴────────────┐
-        │      Strategist         │
-        │  (optionally Tactician) │
-        └─────────────────────────┘
 
 
 
