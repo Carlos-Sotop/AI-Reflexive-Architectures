@@ -173,12 +173,15 @@ Each layer requires scoped memory access:
 
 | Memory Type         | Holder              | Accessed By             | Term     | Purpose                                                              |
 |---------------------|---------------------|--------------------------|----------|----------------------------------------------------------------------|
+| Shared Memory        | System (Long-Term)  | **Watcher, Meta-Watcher**| Long     | Stores finalized outcomes, global state, audit logs, strategic truth  |
+| Heuristic Memory     | Meta-Watcher        | Meta-Watcher             | Long     | Stores rules for evaluating reflection, scoring functions             |
+| Reflection Logs      | Watcher             | Watcher, Meta-Watcher    | Long     | Captures outputs, contradictions, and agent evaluations               |
 | Working Memory       | Orchestrator        | Orchestrator             | Short    | Tracks current input state, pending intent, and flow coordination     |
 | Declarative Memory   | Strategist          | Strategist               | Long     | Strategy logic, learned insights, reusable mental models              |
 | Procedural Memory    | Tactician (optional)| Tactician                | Medium   | Reusable execution patterns and routines                             |
-| Reflection Logs      | Watcher             | Watcher, Meta-Watcher    | Long     | Captures outputs, contradictions, and agent evaluations               |
-| Heuristic Memory     | Meta-Watcher        | Meta-Watcher             | Long     | Stores rules for evaluating reflection, scoring functions             |
-| Shared Memory        | System (Long-Term)  | **Watcher, Meta-Watcher**| Long     | Stores finalized outcomes, global state, audit logs, strategic truth  |
+
+
+
 
 
 ---
