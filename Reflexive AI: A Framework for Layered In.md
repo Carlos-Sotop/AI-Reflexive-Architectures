@@ -62,7 +62,7 @@ The system is structured in layers, each with a distinct cognitive role and memo
 
 | Agent        | Function                                                  | Memory Type                 | Temp |
 |--------------|-----------------------------------------------------------|-----------------------------|-------|
-| Orchestrator | Interprets user intent and delegates control              | Working + partial long-term | 0.3–0.5 |
+| Orchestrator | Interprets user intent and delegates control              | Working + partial long-term | 0.3 |
 | Strategist   | Generates context-aware insights and foresight            | Long-term declarative       | 0.7 |
 | Tactician    | Performs precise, low-level actions                       | Procedural                  | 0.2 |
 
