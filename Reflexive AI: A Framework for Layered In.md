@@ -13,16 +13,16 @@ Level 2: Meta-Watcher
  (Reflects on how reflection is done;
  edits/refines Level 1's prompts/logic)
            
-              ↓
+↓
 
-     Level 1: Reflexive Watcher
+Level 1: Reflexive Watcher
 
 (Evaluates agents; edits their prompts,
  tunes temperature, and A/B tests them)
      
-              ↓
+↓
     
-    Level 0: Execution Agents
+Level 0: Execution Agents
 
 ┌────────────┬────────────┬────────────┐
 │Orchestrator│ Strategist │ Tactician │
