@@ -136,13 +136,17 @@ function pruneReflectionHeuristics(history) {
 
 ## Agent Temperature Strategy
 
-| Layer        | Temperature                                               | Purpose                     | 
-|--------------|-----------------------------------------------------------|-----------------------------|
-| Tactician    | 0.2                                                       | Deterministic execution |
-| Orchestrator | 0.4                                                       | Precise routing and delegation |
-| Strategist   | 0.7                                                       | Insight generation, abstraction | 
-| Watcher      | 0.3                                                       | Low-variance analysis | 
-| Meta-Watcher | 0.5                                                       | Balanced system improvement | 
+| Layer         | Temperature | Purpose                                 |
+|---------------|-------------|-----------------------------------------|
+| Meta-Watcher  | 0.5         | Balanced evaluation and strategy tuning |
+| Watcher       | 0.3         | Low-variance observation + contradiction tracing |
+| Orchestrator  | 0.3         | Reliable routing, avoids hallucination  |
+| Strategist    | 0.7         | Abstraction, hypothesis generation      |
+| Tactician     | 0.2         | Deterministic execution, no drift       |
+
+
+
+
 
 
 Example Agent Call
