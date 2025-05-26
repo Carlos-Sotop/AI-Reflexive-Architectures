@@ -171,13 +171,15 @@ const res = await openai.chat.completions.create({
 
 Each layer requires scoped memory access:
 
-| Memory Type        | Used By                                               | Purpose                     | 
-|--------------|-----------------------------------------------------------|-----------------------------|
-| Working Memory    | All agents                                                       | Contextual short-term inputs |
-| Declarative | Strategist                                                       | Strategic long-term planning context |
-| Procedural   | Tactician                                                       | Fast, repeatable execution traces | 
-| Reflection Logs      | Watcher                                                       | Tracks agent contradictions and results | 
-| Heuristic Memory | Meta-Watcher                                                       | Evaluation questions, interval tuning | 
+| Memory Type         | Holder              | Accessed By             | Term     | Purpose                                                              |
+|---------------------|---------------------|--------------------------|----------|----------------------------------------------------------------------|
+| Working Memory       | Orchestrator        | Orchestrator             | Short    | Tracks current input state, pending intent, and flow coordination     |
+| Declarative Memory   | Strategist          | Strategist               | Long     | Strategy logic, learned insights, reusable mental models              |
+| Procedural Memory    | Tactician (optional)| Tactician                | Medium   | Reusable execution patterns and routines                             |
+| Reflection Logs      | Watcher             | Watcher, Meta-Watcher    | Long     | Captures outputs, contradictions, and agent evaluations               |
+| Heuristic Memory     | Meta-Watcher        | Meta-Watcher             | Long     | Stores rules for evaluating reflection, scoring functions             |
+| Shared Memory        | System (Long-Term)  | **Watcher, Meta-Watcher**| Long     | Stores finalized outcomes, global state, audit logs, strategic truth  |
+
 
 ---
 
