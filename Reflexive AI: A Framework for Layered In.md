@@ -32,14 +32,9 @@ The system is structured in layers, each with a distinct cognitive role:
 
 ---
 
-## Architecture Diagram
-
 ## Architecture Overview
 
 The system is structured in layers, each with a distinct cognitive role and memory type.
-## Architecture Overview
-
-The system is structured in layers, each with a distinct cognitive role:
 
                          ┌────────────────────────────┐
                          │      Shared Memory Layer    │
