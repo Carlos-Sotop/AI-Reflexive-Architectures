@@ -105,6 +105,18 @@ function pruneReflectionHeuristics(history) {
 }
 
 ```
+
+Agent Temperature Strategy
+
+| Layer        | Temperature                                               | Purpose                     | Temp |
+|--------------|-----------------------------------------------------------|-----------------------------|-------|
+| Tactician | Interprets user intent and delegates control              | Working + partial long-term | 0.3–0.5 |
+| Orchestrator   | Generates context-aware insights and foresight            | Long-term declarative       | 0.7 |
+| Strategist    | Performs precise, low-level actions                       | Procedural                  | 0.2 |
+| Watcher    | Performs precise, low-level actions                       | Procedural                  | 0.2 |
+| Meta-Watcher    | Performs precise, low-level actions                       | Procedural                  | 0.2 |
+
+
 Agent Temperature Strategy
 Layer	Temperature	Purpose
 Tactician	0.2	Deterministic execution
