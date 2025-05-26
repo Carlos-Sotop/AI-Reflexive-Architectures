@@ -15,14 +15,14 @@ The system is structured in layers, each with a distinct cognitive role:
            
 ↓
 
-**Level 1: Reflexive Watcher**
+**<Level 1: Reflexive Watcher>**
 
 (Evaluates agents; edits their prompts,
  tunes temperature, and A/B tests them)
      
 ↓
     
-**Level 0: Execution Agents**
+**<Level 0: Execution Agents>**
 
 │ Orchestrator │ Strategist │ Tactician │
 
