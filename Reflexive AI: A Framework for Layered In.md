@@ -73,18 +73,15 @@ function testAgentPrompts(agentId, promptVariants) {
 }
 ```
 
-Level 2 – Meta-Watcher
+### Level 2 – Meta-Watcher
+
 Reflects on the reflection process itself:
 
-Evaluates the Watcher's own logic and behavior over time.
-
-Modifies Watcher prompts, logic, or heuristics.
-
-A/B tests reflection strategies, such as shallow vs. deep analysis or different intervals.
-
-Handles strategic forgetting of outdated self-evaluation techniques.
-
-Runs on long intervals (e.g. milestone-based or weekly):
+- Evaluates the Watcher's own logic and behavior over time.
+- Modifies Watcher prompts, logic, or heuristics.
+- A/B tests reflection strategies, such as shallow vs. deep analysis or different intervals.
+- Handles strategic forgetting of outdated self-evaluation techniques.
+- Runs on long intervals (e.g. milestone-based or weekly):
 
 ```ts
 
