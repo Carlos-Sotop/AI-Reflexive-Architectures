@@ -10,19 +10,7 @@ The system is structured in layers, each with a distinct cognitive role:
 
 Level 2: Meta-Watcher
 
- (Reflects on how reflection is done;
- edits/refines Level 1's prompts/logic)
-              ↓
-     Level 1: Reflexive Watcher
-(Evaluates agents; edits their prompts,
- tunes temperature, and A/B tests them)
-              ↓
-    Level 0: Execution Agents
-┌────────────┬────────────┬────────────┐
-│Orchestrator│ Strategist │ Tactician │
-└────────────┴────────────┴────────────┘
-↓
-Shared Memory Layer (long-term)
+<pre> ```txt System Hierarchy: Level 2: Meta-Watcher ↳ Reflects on the Watcher ↳ Edits Level 1 prompts, A/B strategies ↓ Level 1: Reflexive Watcher ↳ Evaluates Level 0 agents ↳ Edits prompts, tunes temp, A/B tests outputs ↓ Level 0: Execution Agents ┌──────────────┬─────────────┬─────────────┐ │ Orchestrator │ Strategist │ Tactician │ └──────────────┴─────────────┴─────────────┘ ↓ Shared Memory Layer (long-term) ``` </pre>
 
 ---
 
