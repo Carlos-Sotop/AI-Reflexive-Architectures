@@ -8,7 +8,8 @@ This framework explores how to build AI systems that improve themselves through 
 
 The system is structured in layers, each with a distinct cognitive role:
 
-     Level 2: Meta-Watcher
+Level 2: Meta-Watcher
+
  (Reflects on how reflection is done;
  edits/refines Level 1's prompts/logic)
               ↓
