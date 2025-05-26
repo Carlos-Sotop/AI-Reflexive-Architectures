@@ -105,8 +105,7 @@ function pruneReflectionHeuristics(history) {
 }
 
 ```
-
-Agent Temperature Strategy
+### Agent Temperature Strategy
 
 | Layer        | Temperature                                               | Purpose                     | 
 |--------------|-----------------------------------------------------------|-----------------------------|
