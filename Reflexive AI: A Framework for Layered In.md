@@ -32,6 +32,33 @@ The system is structured in layers, each with a distinct cognitive role:
 
 ---
 
+## Architecture Diagram
+
+┌────────────────────────────┐     ┌────────────────────────────┐
+│      Meta-Watcher          │◄──▶│                            │
+│  (Reflects on reflection)  │     │   Shared Memory Layer      │
+│  • Heuristic Memory        │     │   • Strategic Knowledge     │
+└────────────┬───────────────┘     │   • Global Context          │
+             ↓                     │   • Prompt/Test History     │
+┌────────────────────────────┐     │   • Reflection Logs         │
+│   Reflexive Watcher        │◄──▶│                            │
+│ (Monitors + tunes agents)  │     └────────────────────────────┘
+│ • Reflection Logs          │
+└────────────┬───────────────┘
+             ↓
+┌────────────────────────────┐
+│       Orchestrator         │◄────────────┐
+│ (Delegates, sequences)     │             │
+│ • Working Memory           │             │
+└────────────┬───────────────┘             │
+             ↓                             │
+    ┌────────────────────┐   ┌────────────────────────┐
+    │     Strategist      │   │       Tactician        │
+    │ (Plans & reasons)   │   │ (Executes instructions)│
+    │ • Declarative Mem   │   │ • Procedural Mem       │
+    └────────────────────┘   └────────────────────────┘
+
+
 ## Layer Descriptions
 
 ### Level 0 – Execution Agents
