@@ -71,6 +71,8 @@ function testAgentPrompts(agentId, promptVariants) {
     temperature: 0.4 + i * 0.1,
   }));
 }
+```
+
 Level 2 – Meta-Watcher
 Reflects on the reflection process itself:
 
@@ -84,6 +86,8 @@ Handles strategic forgetting of outdated self-evaluation techniques.
 
 Runs on long intervals (e.g. milestone-based or weekly):
 
+```ts
+
 // Meta-watcher A/B testing reflection logic
 const reflectionVariants = [
   { id: 'interval-3d', config: { intervalDays: 3, questionDepth: 1 } },
@@ -96,6 +100,8 @@ function pruneReflectionHeuristics(history) {
     h.lastUsedRecently && h.performanceImpact > 0.7
   );
 }
+
+```
 Agent Temperature Strategy
 Layer	Temperature	Purpose
 Tactician	0.2	Deterministic execution
@@ -106,6 +112,7 @@ Meta-Watcher	0.5	Balanced system improvement
 
 Example Agent Call
 
+```ts
 const settings = {
   tactician: { temp: 0.2, prompt: "You strictly execute structured actions." },
   strategist: { temp: 0.7, prompt: "You generate high-level strategic insights..." },
@@ -120,6 +127,8 @@ const res = await openai.chat.completions.create({
   ],
   response_format: { type: "json_object" }
 });
+
+```
 Memory Stack
 Memory Type	Used By	Purpose
 Working Memory	All agents	Short-term context
