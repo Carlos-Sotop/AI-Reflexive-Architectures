@@ -79,6 +79,8 @@ function testAgentPrompts(agentId, promptVariants) {
 }
 ```
 
+---
+
 ### Level 2 – Meta-Watcher
 
 Reflects on the reflection process itself:
