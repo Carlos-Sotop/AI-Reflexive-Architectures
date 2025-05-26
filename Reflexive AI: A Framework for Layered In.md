@@ -120,6 +120,7 @@ function pruneReflectionHeuristics(history) {
 | Watcher      | 0.3                                                       | Low-variance analysis | 
 | Meta-Watcher | 0.5                                                       | Balanced system improvement | 
 
+
 Example Agent Call
 
 ```ts
@@ -139,42 +140,59 @@ const res = await openai.chat.completions.create({
 });
 
 ```
+
+---
+
+## Memory Stack
+
 Each layer requires scoped memory access:
 
-Memory Type	Used By	Purpose
+| Memory Type        | Used By                                               | Purpose                     | 
 |--------------|-----------------------------------------------------------|-----------------------------|
-Working Memory	All agents	Contextual short-term inputs
-Declarative	Strategist	Strategic long-term planning context
-Procedural	Tactician	Fast, repeatable execution traces
-Reflection Logs	Watcher	Tracks agent contradictions and results
-Heuristic Memory	Meta-Watcher	Evaluation questions, interval tuning
+| Working Memory    | All agents                                                       | Contextual short-term inputs |
+| Declarative | Strategist                                                       | Strategic long-term planning context |
+| Procedural   | Tactician                                                       | Fast, repeatable execution traces | 
+| Reflection Logs      | Watcher                                                       | Tracks agent contradictions and results | 
+| Heuristic Memory | Meta-Watcher                                                       | Evaluation questions, interval tuning | 
 
-When to Reflect
-Trigger Type	Layer	Example
-Contradiction	Watcher	Strategist suggests Gen Z, Orchestrator blocks it
-Milestone Reached	Meta-Watcher	Campaign deployment completed
-Performance Drop	Meta-Watcher	A/B test regression or plateau
+---
 
-Design Principles
-Layered Reflexivity
-Each layer reflects on the one below it, with bounded authority.
+## When to Reflect
 
-Bounded Feedback Loops
-Avoid infinite regress by scheduling reflection at fixed intervals.
+| Trigger Type           | Layer         | Example                                                                 |
+|------------------------|---------------|-------------------------------------------------------------------------|
+| Contradiction          | Watcher       | Strategist proposes direction; Orchestrator executes something misaligned |
+| Incoherence            | Watcher       | Outputs across agents conflict or diverge in tone, goal, or logic      |
+| Execution Drift        | Watcher       | Orchestrator decisions gradually deviate from strategic intent          |
+| Milestone Reached      | Meta-Watcher  | A process, session, or plan completes                                  |
+| Performance Drop       | Meta-Watcher  | Observed quality or effectiveness decreases over time                  |
+| Stagnation             | Meta-Watcher  | No variation or adaptation across recent outputs                       |
+| Oversensitivity        | Meta-Watcher  | Watcher triggers frequently with low-value corrections                 |
+| Under-reflection       | Meta-Watcher  | Watcher hasn’t triggered in too long despite signs of drift            |
 
-Prompt Adaptation
-Prompts and temperatures are dynamic — updated via data and feedback, not hardcoded.
+---
 
-Selective Forgetting
-Memory is constantly pruned for relevance at each level.
+## Design Principles
 
-Neuro-Inspired Mapping
+### Layered Reflexivity  
+Each layer reflects on the one below it, with bounded authority. Reflection is structured, not recursive.
 
-Procedural → Tactician (Cerebellum)
+### Bounded Feedback Loops  
+Avoid infinite regress by triggering reflection at meaningful intervals or events, not continuously.
 
-Declarative → Strategist (Hippocampus)
+### Prompt Adaptation  
+Prompts, temperature, and system behavior are dynamic — modified based on reflection outcomes and empirical feedback.
 
-Metacognition → Watchers (Prefrontal Cortex)
+### Selective Forgetting  
+Each layer prunes memory based on relevance, impact, and recency. Forgetting is as important as remembering.
+
+### Neuro-Inspired Mapping  
+- **Procedural →** (Tactician role, inspired by Cerebellum)  
+- **Declarative →** (Strategist role, inspired by Hippocampus)  
+- **Metacognition →** (Watcher & Meta-Watcher roles, inspired by Prefrontal Cortex)
+
+
+---
 
 Closing Note
 
